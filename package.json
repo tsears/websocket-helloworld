@@ -1,0 +1,19 @@
+{
+  "name": "websocket-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsears/websocket-helloworld.git"
+  },
+  "author": "Tom Sears",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsears/websocket-helloworld/issues"
+  },
+  "homepage": "https://github.com/tsears/websocket-helloworld#readme"
+}
