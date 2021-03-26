@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Websocket Hello World</title>
+  <style>
+    html, body {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #ddd;
+        min-height: 100%;
+        background-color: #222;
+    }
+
+    .container {
+        background-color: #000;
+        margin: 1rem;
+        padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Websocket Hello World</h1>
+  <div class="container">
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io(); 
+    socket.on('msg', (msg) => {
+      const div = document.createElement('div')
+      div.textContent = msg
+      document.querySelector('.container').appendChild(div)
+      console.log(msg)
+    })
+  </script>
+</body>
+</html>
